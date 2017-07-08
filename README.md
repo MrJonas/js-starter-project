@@ -22,4 +22,12 @@ My javascript starter project
 
 9. testing: framework: mocha, assertion library: chai, helper: jsdom.
 
-10. countinous integration: travis-ci
+10. countinous integration: travis-ci, appveyor
+
+11. TODO: Generating mock data
+
+12. deploy: project specific
+
+13. TODO: http requests: fetch
+
+14. error loggin: project specific
