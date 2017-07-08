@@ -16,6 +16,10 @@ My javascript starter project
 
 6. transpiling: babel.
 
-7. bundling: TODO: webpack 2
+7. bundling: webpack TODO: update to webpack 2
 
 8. linting: ESLint.
+
+9. testing: framework: mocha, assertion library: chai, helper: jsdom.
+
+10. countinous integration: travis-ci

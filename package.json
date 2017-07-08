@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node build_scripts/startMessage.js",
-    "start": "npm-run-all --parallel start:devServer security:check lint:watch",
+    "start": "npm-run-all --parallel start:devServer security:check lint:watch test:watch",
     "start:devServer": "babel-node build_scripts/devServer.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter progress build_scripts/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch",
     "security:check": "nsp check",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel start:devServer security:check localtunnel",
